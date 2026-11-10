@@ -1,0 +1,10 @@
+rasterio
+rio-cogeo
+pystac
+geopandas
+pyarrow
+scipy
+pyproj
+pandas
+numpy
+duckdb

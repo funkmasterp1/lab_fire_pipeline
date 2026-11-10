@@ -1,0 +1,67 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "mukluk_viirs_hotspots",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -143.36813383675823,
+          63.24080462210592
+        ],
+        [
+          -142.79624066006815,
+          63.24080462210592
+        ],
+        [
+          -142.79624066006815,
+          63.47796632574542
+        ],
+        [
+          -143.36813383675823,
+          63.47796632574542
+        ],
+        [
+          -143.36813383675823,
+          63.24080462210592
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -143.36813383675823,
+    63.24080462210592,
+    -142.79624066006815,
+    63.47796632574542
+  ],
+  "properties": {
+    "title": "VIIRS active fire detections (NASA FIRMS)",
+    "start_datetime": "2026-08-18T11:04:00+00:00",
+    "end_datetime": "2026-09-11T20:10:00+00:00",
+    "processing:level": "L2",
+    "datetime": "2026-08-19T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "./catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "s3://peter-fire-lab121267/parquet/mukluk_viirs_hotspots.parquet",
+      "type": "application/vnd.apache.parquet",
+      "roles": [
+        "data"
+      ]
+    }
+  }
+}
